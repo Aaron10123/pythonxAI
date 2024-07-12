@@ -13,6 +13,10 @@ cols = st.columns(row_quantity)  # 分欄
 for image_index in range(len(st.session_state.image)):  # 顯示所有圖片
     st.image(f"{image_folder}/{image_files[image_index]}", use_column_width=True)
     # 顯示圖片,使用欄寬度
-
+    st.markdown(f"{image_files[image_index][:-3]}")
+    st.write("價格：10")
 
 st.title("新增商品庫存")
+while True:
+    for i in range(row_quantity):
+        pass
